@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem "thin"
 gem "sinatra"
+gem "thin"
 
 gem "sprockets"
 
@@ -9,4 +9,7 @@ gem "json"
 gem "sass"
 gem "coffee-script"
 
-gem "capistrano"
+group :development do
+  gem 'guard-livereload'
+  gem "capistrano"
+end
