@@ -1,13 +1,23 @@
 <!doctype html>
-<html lang="en" ng-app="seedApp">
+<html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
-  <title>Sinatra + Angular + Sprockets Seed Application</title>
+  <title>My AngularJS App</title>
   <link rel="stylesheet" href="/assets/index.css"/>
 </head>
 <body>
-  <h1>Sinatra + Angular + Sprockets Seed Application</h1>
-  <p>Replace "seedApp" thoughout to rename your application.</p>
+  <ul class="menu">
+    <li><a href="#/view1">view1</a></li>
+    <li><a href="#/view2">view2</a></li>
+  </ul>
+
+  <div ng-view></div>
+
+  <div>Angular seed app: v<span app-version></span></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  -->
   <script src="/assets/index.js"></script>
 </body>
 </html>
