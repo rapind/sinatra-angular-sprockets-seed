@@ -1,13 +1,15 @@
 #\ -p 3000
+Bundler.require
 
-map '/assets' do
-  environment = Sprockets::Environment.new
-  environment.append_path 'assets/images'
-  environment.append_path 'assets/javascripts'
-  environment.append_path 'assets/stylesheets'
-  environment.append_path 'assets/vendor'
-  run environment
+configure :development do
+  use Rack::LiveReload
+  p "Development environment loaded"
 end
 
-require './server'
+configure :production do
+  use Rack::Deflater
+  p "Production environment loaded"
+end
+
+require './app/app'
 run Sinatra::Application
