@@ -10,11 +10,3 @@ guard 'sprockets',
   watch (%r{(assets|vendor)\/stylesheets\/.*})
   watch (%r{(assets|vendor)\/images\/.*})
 end
-
-guard 'livereload' do
-  # App
-  watch(%r{app/app.rb})
-
-  # Static files
-  watch(%r{public\/.*})
-end

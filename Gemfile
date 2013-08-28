@@ -10,6 +10,5 @@ group :development do
   gem "coffee-script"
   gem "uglifier"
   gem "guard-sprockets", git: "https://github.com/rapind/guard-sprockets.git"
-  gem "guard-livereload"
   gem "capistrano"
 end
