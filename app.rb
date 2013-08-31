@@ -1,11 +1,6 @@
 Bundler.require
 require 'sinatra/asset_pipeline'
 
-configure :development do
-  use Rack::LiveReload
-  p "Development environment loaded"
-end
-
 configure :production do
   use Rack::Deflater
   p "Production environment loaded"

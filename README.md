@@ -19,7 +19,7 @@ rackup
 ```
 
 ### LiveReload via Guard
-There's a guard task included that you can run in a seperate or background shell which will auto-reload your browser whenver you change a file.
+There's a guard task included that you can run in a seperate or background shell which will auto-reload your browser whenver you change a file. You'll need to install a LiveReload browser extension. I.e. https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en
 ```
 guard
 ```
