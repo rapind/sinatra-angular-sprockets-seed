@@ -15,13 +15,9 @@ guard 'livereload' do
   # Asset (Sprocket) files
   watch(%r{assets\/.*})
 
-  # Static files
-  watch(%r{public/.+\.(htm|html)})
-end
+  # Public files
+  watch(%r{public/.+\.html})
 
-# guard :jasmine do
-#   watch(%r{spec/javascripts/spec\.(js\.coffee|js|coffee)$}) { 'spec/javascripts' }
-#   watch(%r{spec/javascripts/.+_spec\.(js\.coffee|js|coffee)$})
-#   watch(%r{spec/javascripts/fixtures/.+$})
-#   watch(%r{public/assets/javascripts/(.+?)\.(js\.coffee|js|coffee)(?:\.\w+)*$}) { |m| "spec/javascripts/#{ m[1] }_spec.#{ m[2] }" }
-# end
+  # Specs
+  watch(%r{spec/.+\.(css|js|html)})
+end

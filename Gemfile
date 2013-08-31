@@ -8,7 +8,7 @@ gem 'uglifier'
 
 group :development, :test do
   gem 'guard-sprockets', git: 'https://github.com/rapind/guard-sprockets.git'
-  gem 'guard-jasmine'
+  gem 'jasmine'
 end
 
 group :development do
