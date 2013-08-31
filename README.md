@@ -13,15 +13,20 @@ git add .
 git commit -am "Initial Commit"
 ```
 
-Running
-Usually you'll want two shells open. One for rack and another for guard. You could alternatively run either or both in the background, but I prefer having them both open while I work.
-
-Shell 1
+## Running
 ```
 rackup
 ```
 
-Shell 2
+## Assets
+Depending on how you're deploying your app, you will probably want to precompile your assets locally.
+
+Assets can be precompiled into the public directory via rake task:
 ```
-guard
+rake assets:precompile
+```
+
+Assets can be cleaned (removed) from the public directory via rake task:
+```
+rake assets:clean
 ```
