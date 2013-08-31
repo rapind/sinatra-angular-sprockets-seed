@@ -5,3 +5,6 @@
 
 # Ignore Sass' cache
 /.sass-cache
+
+# Ignore compiled assets
+public/assets

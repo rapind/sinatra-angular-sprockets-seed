@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/rapind/guard-sprockets.git
+  revision: 5dce5a1c0a1e0befb24de994d1bbf8c9726f7ee4
+  specs:
+    guard-sprockets (0.4.3)
+      execjs (~> 1.0)
+      guard (>= 1.1.0)
+      sprockets (~> 2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -7,6 +16,8 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
+    childprocess (0.3.9)
+      ffi (~> 1.0, >= 1.0.11)
     coderay (1.0.9)
     coffee-script (2.2.0)
       coffee-script-source
@@ -27,6 +38,12 @@ GEM
       lumberjack (>= 1.0.2)
       pry (>= 0.9.10)
       thor (>= 0.14.6)
+    guard-jasmine (1.18.2)
+      childprocess
+      guard (>= 1.1.0)
+      multi_json
+      thor
+      tilt
     guard-livereload (1.4.0)
       em-websocket (>= 0.5.0)
       guard (>= 1.8.0)
@@ -100,7 +117,9 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano
+  guard-jasmine
   guard-livereload
+  guard-sprockets!
   rake
   sinatra
   sinatra-asset-pipeline
