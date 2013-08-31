@@ -18,7 +18,13 @@ git commit -am "Initial Commit"
 rackup
 ```
 
-## Assets
+### LiveReload via Guard
+There's a guard task included that you can run in a seperate or background shell which will auto-reload your browser whenver you change a file.
+```
+guard
+```
+
+## Deploying Assets
 Depending on how you're deploying your app, you will probably want to precompile your assets locally.
 
 Assets can be precompiled into the public directory via rake task:
