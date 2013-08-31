@@ -12,8 +12,11 @@ guard 'livereload' do
   # App
   watch(%r{app.rb})
 
+  # Asset (Sprocket) files
+  watch(%r{assets\/.*})
+
   # Static files
-  watch(%r{public/.+\.(css|js|html)})
+  watch(%r{public/.+\.(htm|html)})
 end
 
 # guard :jasmine do
