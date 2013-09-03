@@ -10,7 +10,11 @@ class App < Sinatra::Base
   register Sinatra::AssetPipeline
 
   get "/" do
-    send_file File.join(settings.public_folder, 'index.html')
+    haml :index
   end
-end
 
+  get "/partials/:partial" do |partial|
+    haml :"partials/#{partial}"
+  end
+
+end

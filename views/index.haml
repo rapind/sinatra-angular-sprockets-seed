@@ -1,0 +1,21 @@
+!!! 5
+%html{ :lang => "en", "ng-app" => "myApp" }
+  %head
+    %meta{ :charset => "utf-8" }
+    %meta{ :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport" }
+    %title AngularJS Seed
+    %link{ :href => "/assets/application.css", :rel => "stylesheet" }
+  %body
+    .container
+      %h1 AngularJS Seed
+      %ul.nav.nav-pills
+        %li
+          %a{ :href => "#/view1" } View 1
+        %li
+          %a{ :href => "#/view2" } View 2
+      %hr/
+      %div{ "ng-view" => "" }
+      %div
+        Angular seed app: v
+        %span{ "app-version" => "" }
+    %script{ :src => "/assets/application.js" }

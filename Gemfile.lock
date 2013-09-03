@@ -40,6 +40,8 @@ GEM
       em-websocket (>= 0.5.0)
       guard (>= 1.8.0)
       multi_json (~> 1.7)
+    haml (4.0.3)
+      tilt
     highline (1.6.19)
     hike (1.2.3)
     http_parser.rb (0.5.3)
@@ -111,6 +113,7 @@ DEPENDENCIES
   capistrano
   guard-livereload
   guard-sprockets!
+  haml
   rake
   sinatra
   sinatra-asset-pipeline
